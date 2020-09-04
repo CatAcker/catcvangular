@@ -7,9 +7,6 @@ main {
     height: 100%;
     overflow: auto;
     padding: 16px;
-    h5 {
-        padding: 8px 0;
-    }
 }
 
 :host {

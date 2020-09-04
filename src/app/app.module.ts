@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultviewComponent } from './defaultview/defaultview.component';
-
+import { HammerModule } from '@angular/platform-browser';
+import { IgxIconModule } from 'igniteui-angular';
+import { IgxNavigationDrawerModule } from 'igniteui-angular'
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,10 @@ import { DefaultviewComponent } from './defaultview/defaultview.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HammerModule,
+    IgxIconModule,
+    IgxNavigationDrawerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
