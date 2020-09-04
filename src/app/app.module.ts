@@ -4,23 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DefaultviewComponent } from './defaultview/defaultview.component';
-import { HammerModule } from '@angular/platform-browser';
-import { IgxIconModule } from 'igniteui-angular';
-import { IgxNavigationDrawerModule } from 'igniteui-angular'
+import { TestPageComponent } from './test-page/test-page.component';
+import { MePageComponent } from './me-page/me-page.component';
+import { HobbiesPageComponent } from './hobbies-page/hobbies-page.component';
+import { SkillsPageComponent } from './skills-page/skills-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultviewComponent
+    TestPageComponent,
+    MePageComponent,
+    HobbiesPageComponent,
+    SkillsPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule,
-    HammerModule,
-    IgxIconModule,
-    IgxNavigationDrawerModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
