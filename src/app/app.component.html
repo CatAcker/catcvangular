@@ -1,39 +1,681 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <h1>Animations</h1>
-            <button class="btn btn-primary" (click)="onAnimate()">Animate!</button>
-            <button class="btn btn-primary" (click)="onShrink()">Shrink!</button>
-            <hr>
-            <div style="width: 100px; height: 100px" [@divState]="state" (@divState.start)="animationStarted($event)" (@divState.done)="animationEnded($event)">
-            </div>
-            <br>
-            <div style="width: 100px; height: 100px" [@wildState]="wildState">
-            </div>
+<html>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        <!-- span.cls_002 {
+            font-family: Arial, serif;
+            font-size: 24.8px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_002 {
+            font-family: Arial, serif;
+            font-size: 24.8px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_003 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_003 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_004 {
+            font-family: Arial, serif;
+            font-size: 8.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_004 {
+            font-family: Arial, serif;
+            font-size: 8.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_005 {
+            font-family: Arial, serif;
+            font-size: 8.0px;
+            color: rgb(102, 102, 102);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_005 {
+            font-family: Arial, serif;
+            font-size: 8.0px;
+            color: rgb(102, 102, 102);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_006 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(45, 45, 45);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_006 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(45, 45, 45);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_007 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(102, 102, 102);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_007 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(102, 102, 102);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_009 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_009 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_012 {
+            font-family: Arial, serif;
+            font-size: 9.0px;
+            color: rgb(102, 102, 102);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_012 {
+            font-family: Arial, serif;
+            font-size: 9.0px;
+            color: rgb(102, 102, 102);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_008 {
+            font-family: Arial, serif;
+            font-size: 17.3px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_008 {
+            font-family: Arial, serif;
+            font-size: 17.3px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_010 {
+            font-family: Arial, serif;
+            font-size: 14.4px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_010 {
+            font-family: Arial, serif;
+            font-size: 14.4px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_011 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(45, 45, 45);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_011 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(45, 45, 45);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_018 {
+            font-family: Arial, serif;
+            font-size: 17.3px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: underline
+        }
+        
+        div.cls_018 {
+            font-family: Arial, serif;
+            font-size: 17.3px;
+            color: rgb(62, 0, 151);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_013 {
+            font-family: Arial, serif;
+            font-size: 9.0px;
+            color: rgb(102, 102, 102);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_013 {
+            font-family: Arial, serif;
+            font-size: 9.0px;
+            color: rgb(102, 102, 102);
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_015 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_015 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_014 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(0, 0, 255);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_014 {
+            font-family: Arial, serif;
+            font-size: 10.0px;
+            color: rgb(0, 0, 255);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_016 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_016 {
+            font-family: Arial, serif;
+            font-size: 12.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        span.cls_017 {
+            font-family: Arial, serif;
+            font-size: 9.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        div.cls_017 {
+            font-family: Arial, serif;
+            font-size: 9.0px;
+            color: rgb(62, 0, 151);
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none
+        }
+        
+        -->
+    </style>
+    <script type="text/javascript" src="d03f58a6-e605-11ea-8b25-0cc47a792c0a_id_d03f58a6-e605-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:841px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+        </div>
+        <app-header></app-header>
+        <div style="position:absolute;left:37.96px;top:38.79px" class="cls_002">
+            <span class="cls_002">CATHERINA (CATHRYN) ACKERMAN</span>
+        </div>
+        <div style="position:absolute;left:37.96px;top:71.55px" class="cls_003">
+            <span class="cls_003">North-West University Student</span>
+        </div>
+        <div style="position:absolute;left:39.95px;top:90.97px" class="cls_004">
+            <span class="cls_004">Gmail: </span>
+            <span class="cls_005"> 
+				<A HREF="catherina.ackerman@gmail.com">catherina.ackerman@gmail.com </A> 
+			</span>
+        </div>
+        <div style="position:absolute;left:193.59px;top:90.97px" class="cls_004">
+            <span class="cls_004">Sell: </span>
+            <span class="cls_005"> 063 5559 8026 </span>
+        </div>
+        <div style="position:absolute;left:271.02px;top:90.97px" class="cls_004">
+            <span class="cls_004">Home Address: </span>
+            <span class="cls_005"> 14, Sammy Marks Street, 1911 </span>
+        </div>
+        <div style="position:absolute;left:40.94px;top:100.44px" class="cls_004">
+            <span class="cls_004">Ciy: </span>
+            <span class="cls_005"> Vanderbijlpark, SA</span>
+        </div>
+        <div style="position:absolute;left:150.73px;top:100.44px" class="cls_004">
+            <span class="cls_004">Linkedin: </span>
+            <span class="cls_005"> 
+				<A HREF="https://www.linkedin.com/in/cathryn-ackerman-7b79281a2/">https://www.linkedin.com/in/cathryn-ackerman-7b79281a2/</A> 
+			</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:128.04px" class="cls_007">
+            <span class="cls_007">I am an enthusiastic and driven undergraduate studying B.Sc. Infor-</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:206.81px" class="cls_006">
+            <span class="cls_006">Hockey</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:222.76px" class="cls_009">
+            <span class="cls_009">(Sport)</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:139.99px" class="cls_007">
+            <span class="cls_007">mation Technology at the North-West University in Potchefstroom.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:236.72px" class="cls_009">
+            <span class="cls_009">Played for Northwest Gryphons</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:151.95px" class="cls_007">
+            <span class="cls_007">I am currently looking for an employment opportunity to utilise my</span>
+        </div>
+        <div style="position:absolute;left:366.49px;top:250.66px" class="cls_012">
+            <span class="cls_012">
+				<i class="fa fa-calendar" style="font-size:9px"></i>
+				April 2018 - March 2020</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:163.90px" class="cls_007">
+            <span class="cls_007">I.T. development skills and I.T. knowledge.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:264.98px" class="cls_006">
+            <span class="cls_006">Hostel Sports</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:280.07px" class="cls_009">
+            <span class="cls_009">Soccer</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:200.05px" class="cls_018">
+            <span class="cls_018">MOST PROUD OF</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:290.53px" class="cls_009">
+            <span class="cls_009">Hockey</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:300.63px" class="cls_009">
+            <span class="cls_009">Badminton</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:310.72px" class="cls_009">
+            <span class="cls_009">Squash</span>
+        </div>
+        <div style="position:absolute;left:38.12px;top:229.55px" class="cls_010">
+            <span class="cls_010"></span>
+            <span class="cls_011">Courage I have</span>
+        </div>
+        <div style="position:absolute;left:60.40px;top:241.51px" class="cls_007">
+            <span class="cls_007">To take on any challenge that is given to me.</span>
+        </div>
+        <div style="position:absolute;left:366.49px;top:322.66px" class="cls_012">
+            <span class="cls_012">
+				<i class="fa fa-calendar" style="font-size:9px"></i>
+				Jan 2018 - March 2020</span>
+        </div>
+        <div style="position:absolute;left:39.02px;top:265.92px" class="cls_010">
+            <span class="cls_010"></span><span class="cls_011"> Persistence & Loyalty</span>
+        </div>
+        <div style="position:absolute;left:60.40px;top:277.87px" class="cls_007">
+            <span class="cls_007">Showed that I don’t give up on a project when I encounter</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:338.98px" class="cls_018">
+            <span class="cls_018">STRENGTHS</span>
+        </div>
+        <div style="position:absolute;left:60.40px;top:289.83px" class="cls_007">
+            <span class="cls_007">the first setback.</span>
+        </div>
+        <div style="position:absolute;left:368.93px;top:362.07px" class="cls_007">
+            <span class="cls_007">Hard-working</span>
+        </div>
+        <div style="position:absolute;left:444.87px;top:362.07px" class="cls_007">
+            <span class="cls_007">Loyal</span>
+        </div>
+        <div style="position:absolute;left:483.04px;top:362.07px" class="cls_007">
+            <span class="cls_007">Persistence</span>
+        </div>
+        <div style="position:absolute;left:39.02px;top:313.34px" class="cls_010">
+            <span class="cls_010"></span><span class="cls_011">Growth</span>
+        </div>
+        <div style="position:absolute;left:60.40px;top:325.30px" class="cls_007">
+            <span class="cls_007">From knowing nothing from the industry to seeking jobs and</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:376.53px" class="cls_018">
+            <span class="cls_018">WEAKNESSES</span>
+        </div>
+        <div style="position:absolute;left:60.40px;top:337.25px" class="cls_007">
+            <span class="cls_007">internships to further improve my IT skills and communica-</span>
+        </div>
+        <div style="position:absolute;left:60.40px;top:349.21px" class="cls_007">
+            <span class="cls_007">tions skills</span>
+        </div>
+        <div style="position:absolute;left:368.93px;top:400.63px" class="cls_007">
+            <span class="cls_007">Stubborn</span>
+        </div>
+        <div style="position:absolute;left:424.82px;top:400.63px" class="cls_007">
+            <span class="cls_007">Impatient</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:381.57px" class="cls_018">
+            <span class="cls_018">ACHIEVEMENTS PROUD OF</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:415.08px" class="cls_018">
+            <span class="cls_018">PROGRAMMING SKILLS</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:413.66px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> Grade 8 (2013)</span>
+            <span class="cls_012"> - Broke swimming records at Hoërskool Driehoek.</span>
+        </div>
+        <div style="position:absolute;left:368.93px;top:439.18px" class="cls_007">
+            <span class="cls_007">Delphi</span>
+        </div>
+        <div style="position:absolute;left:413.18px;top:439.18px" class="cls_007">
+            <span class="cls_007">C#</span>
+        </div>
+        <div style="position:absolute;left:441.20px;top:439.18px" class="cls_007">
+            <span class="cls_007">HTML</span>
+        </div>
+        <div style="position:absolute;left:484.65px;top:439.18px" class="cls_007">
+            <span class="cls_007">Java</span>
+        </div>
+        <div style="position:absolute;left:519.08px;top:439.18px" class="cls_007">
+            <span class="cls_007">JavaScript</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:427.36px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> Grade 9 (2014)</span>
+            <span class="cls_012"> - Team captain for Team B Hockey.</span>
+        </div>
+        <div style="position:absolute;left:368.93px;top:452.97px" class="cls_007">
+            <span class="cls_007">Python</span>
+        </div>
+        <div style="position:absolute;left:415.98px;top:452.97px" class="cls_007">
+            <span class="cls_007">MatLab</span>
+        </div>
+        <div style="position:absolute;left:464.78px;top:452.97px" class="cls_007">
+            <span class="cls_007">LaTeX</span>
+        </div>
+        <div style="position:absolute;left:505.43px;top:452.97px" class="cls_007">
+            <span class="cls_007">Ubuntu</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:438.32px" class="cls_012">
+            <span class="cls_012">- Won Puk-League for B-Teams Hockey.</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:449.28px" class="cls_012">
+            <span class="cls_012">- Broke swimming records at Hoërskool Driehoek.</span>
+        </div>
+        <div style="position:absolute;left:368.93px;top:465.97px" class="cls_007">
+            <span class="cls_007">C++</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:462.98px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> Grade 11 (2016)</span>
+            <span class="cls_012">- Broke swimming records at Hoërskool Driehoek.</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:473.94px" class="cls_012">
+            <span class="cls_012">- Part of 1st Hockey team at Hoërskool Driehoek.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:480.23px" class="cls_018">
+            <span class="cls_018">LANGUAGES</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:487.63px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> Grade 12 (2017)</span>
+            <span class="cls_012">- Part of Matrix Board.</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:501.33px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> 2018</span>
+            <span class="cls_012"> - Won hostel league for B Teams.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:505.32px" class="cls_011">
+            <span class="cls_011">English</span>
+        </div>
+        <div style="position:absolute;left:477.41px;top:505.32px" class="cls_015">
+            <span class="cls_015">● ● ● ● ●</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:512.29px" class="cls_012">
+            <span class="cls_012">- Sub-Committee Prac-RAG (JOOL) 2018/2019.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:517.28px" class="cls_011">
+            <span class="cls_011">Afrikaans</span>
+        </div>
+        <div style="position:absolute;left:477.41px;top:517.28px" class="cls_015">
+            <span class="cls_015">● ● ● ● ●</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:523.25px" class="cls_012">
+            <span class="cls_012">- Sub-Committee Scientiae 2018/2019.</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:536.95px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> 2019</span>
+            <span class="cls_012"> - Sub-Committee Prac-RAG (JOOL) 2018/2019.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:536.58px" class="cls_018">
+            <span class="cls_018">EDUCATION</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:547.91px" class="cls_012">
+            <span class="cls_012">- Sub-Committee Scientiae 2018/2019.</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:558.87px" class="cls_012">
+            <span class="cls_012">- Sub-Committee MPR (Marketing and Public Relations) 2019/2020.</span>
+        </div>
+        <div style="position:absolute;left:44.52px;top:569.83px" class="cls_012">
+            <span class="cls_012">-Assistant for university module CMPG 121 (C# module).</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:568.67px" class="cls_006">
+            <span class="cls_006">National Senior Certificate (NSC)</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:583.52px" class="cls_012">
+            <span class="cls_012">∙</span>
+            <span class="cls_013"> 2020</span>
+            <span class="cls_012"> - Sub-Committee MPR (Marketing and Public Relations) 2019/2020.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:585.61px" class="cls_009">
+            <span class="cls_009">Hoërskool Driehoek, Vanderbijlpark</span>
+        </div>
+        <div style="position:absolute;left:366.49px;top:601.55px" class="cls_012"><span class="cls_012"><i class="fa fa-calendar" style="font-size:9px"></i> Jan 2013 - Dec 2017</span></div>
+        <div style="position:absolute;left:35.43px;top:614.44px" class="cls_018">
+            <span class="cls_018">ACADEMIC ACHIEVEMENTS</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:618.49px" class="cls_006">
+            <span class="cls_006">Undergraduate in B.Sc. Information</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:632.43px" class="cls_006">
+            <span class="cls_006">Technology (I.T.)</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:646.54px" class="cls_014">
+            <span class="cls_014"> </span>
+            <A HREF="https://drive.google.com/drive/folders/1iIVmTOhg4nuBYCZv_mFC4Z9x-vN0WB_H?usp=sharing">Click here</A>
+            <span class="cls_007"> for academic records or attached.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:649.37px" class="cls_009">
+            <span class="cls_009">North-West University, Potchefstroom</span>
+        </div>
+        <div style="position:absolute;left:366.49px;top:665.31px" class="cls_012">
+            <span class="cls_012">
+				<i class="fa fa-calendar" style="font-size:9px"></i>
+			 Jan 2018 - Present</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:676.71px" class="cls_018">
+            <span class="cls_018">HOBBIES & SPORTS</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:689.63px" class="cls_018">
+            <span class="cls_018">JOB EXPERIENCE</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:708.80px" class="cls_006">
+            <span class="cls_006">Swimming</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:725.74px" class="cls_009">
+            <span class="cls_009">Swim for fun.</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:721.72px" class="cls_006">
+            <span class="cls_006">Airvantage</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:737.69px" class="cls_009">
+            <span class="cls_009">Swimmed in high school more seriously</span>
+        </div>
+        <div style="position:absolute;left:363.69px;top:738.66px" class="cls_009">
+            <span class="cls_009">Sandton, Capital Hill</span>
+        </div>
+        <div style="position:absolute;left:366.49px;top:754.60px" class="cls_012">
+            <span class="cls_012">
+				<i class="fa fa-calendar" style="font-size:9px"></i> 
+			 Jun - Jul, Dec 2018 & Jun - Jul, Dec 2019</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:758.61px" class="cls_006">
+            <span class="cls_006">Embroidery</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:775.55px" class="cls_009">
+            <span class="cls_009">Hobby</span>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div class="col-xs-12">
-            <input type="text" #input>
-            <button class="btn btn-primary" (click)="onAdd(input.value)">Add Item!</button>
-            <hr>
-            <ul class="list-group">
-                <li class="list-group-item" (click)="onDelete(item)" [@list1] *ngFor="let item of list">
-                    {{ item }}
-                </li>
-            </ul>
+    <div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
         </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-xs-12">
-            <ul class="list-group">
-                <li class="list-group-item" (click)="onDelete(item)" [@list2] *ngFor="let item of list">
-                    {{ item }}
-                </li>
-            </ul>
+        <div style="position:absolute;left:35.43px;top:36.93px" class="cls_008">
+            <span class="cls_008">LIFE PHILOSOPHY</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:69.02px" class="cls_016">
+            <span class="cls_016">“You have to work hard for what you want to achieve and</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:82.97px" class="cls_016">
+            <span class="cls_016">you have to set goals and dreams and really go for them.” -</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:96.92px" class="cls_016">
+            <span class="cls_016">Natalie du Toit.</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:117.22px" class="cls_008">
+            <span class="cls_008">REFEREES</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:152.30px" class="cls_011">
+            <span class="cls_011">Dr. Liam Terblanche (CTO)</span>
+        </div>
+        <div style="position:absolute;left:37.67px;top:164.26px" class="cls_017">
+            <span class="cls_017">@</span>
+            <span class="cls_007"> Airvantage</span>
+        </div>
+        <div style="position:absolute;left:37.67px;top:179.20px" class="cls_017">
+            <span class="cls_017">Email: </span>
+            <span class="cls_007"> liam@airvantage.co.za</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:194.14px" class="cls_007">
+            <span class="cls_007">Tel:+270111001880</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:206.10px" class="cls_007">
+            <span class="cls_007">Tel:+270623108833</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:227.02px" class="cls_011">
+            <span class="cls_011">Mr. Dirk Snyman (Lector)</span>
+        </div>
+        <div style="position:absolute;left:37.67px;top:238.98px" class="cls_017">
+            <span class="cls_017">@</span>
+            <span class="cls_007"> North-West University Potchefstroom</span>
+        </div>
+        <div style="position:absolute;left:37.67px;top:253.92px" class="cls_017">
+            <span class="cls_017">Email: </span>
+            <span class="cls_007"> dirk.snyman@nwu.ac.za</span>
+        </div>
+        <div style="position:absolute;left:35.43px;top:268.86px" class="cls_007">
+            <span class="cls_007">M.A.; B.A. Taaltegnologie met Rekenaarwetenskap</span>
         </div>
     </div>
 
-</div>
+</body>
+
+</html>
