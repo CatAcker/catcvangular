@@ -8,6 +8,7 @@ import { TestPageComponent } from './test-page/test-page.component';
 import { MePageComponent } from './me-page/me-page.component';
 import { HobbiesPageComponent } from './hobbies-page/hobbies-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { SharedComponent } from './shared/shared.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
     TestPageComponent,
     MePageComponent,
     HobbiesPageComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    SharedComponent
   ],
   imports: [
     BrowserModule,
