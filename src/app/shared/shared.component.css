@@ -1,8 +1,11 @@
 .container {
     display: inline-flex;
     position: absolute;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
     left: 300px;
-    width: 1605px;
+    width: 1557px;
     height: 934px;
     background: rgb(35, 42, 58)
 }
