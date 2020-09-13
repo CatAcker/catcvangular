@@ -9,6 +9,7 @@ import { MePageComponent } from './me-page/me-page.component';
 import { HobbiesPageComponent } from './hobbies-page/hobbies-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { SharedComponent } from './shared/shared.component';
+import { WaveGirlComponent } from './wave-girl/wave-girl.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SharedComponent } from './shared/shared.component';
     MePageComponent,
     HobbiesPageComponent,
     SkillsPageComponent,
-    SharedComponent
+    SharedComponent,
+    WaveGirlComponent
   ],
   imports: [
     BrowserModule,

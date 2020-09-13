@@ -1,107 +1,65 @@
-.container {
-    padding: 0rem;
-    width: 80.3vw;
-    height: 100vh;
-    display: flex;
-    position: absolute;
-    left: 300px;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-    background: rgb(35, 42, 58)
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.line {
+section {
+    /* position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+section .wave {
     position: absolute;
     width: 100%;
-    overflow: hidden;
-    height: 100%;
-    background: rgb(35, 42, 58);
-}
-
-ul {
-    z-index: 99;
-    position: absolute;
-    list-style: none;
-    right: 30px;
-}
-
-ul li {
-    display: inline;
-    margin: 15px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: quebec;
-    font-size: 20px;
-}
-
-.mid-text {
-    position: absolute;
-    z-index: 99;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.mid-text h2 {
-    color: #fff;
-    font-family: big john;
-    font-size: 50px;
-}
-
-.line-1 {
-    z-index: 15;
-    opacity: 0.5;
-}
-
-.line-2 {
-    z-index: 10;
-    opacity: 0.7;
-}
-
-.line-3 {
-    z-index: 5;
-}
-
-.wave {
-    position: absolute;
+    height: 119px;
+    bottom: 0;
     left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: left bottom;
+    background: url(../../assets/wave1.png);
+    animation: animate 10s linear infinite;
 }
 
-.wave1 {
-    -webkit-backface-size: 50% 80px;
-    background-size: 50% 80px;
+section .wave::before {
+    content: '';
+    width: 100%;
+    height: 119px;
+    background: url(../../assets/wave1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
 }
 
-.wave2 {
-    -webkit-backface-size: 50% 100px;
-    background-size: 50% 100px;
-    animation: animate 15s linear infinite;
-}
-
-.wave3 {
-    -webkit-backface-size: 50% 80px;
-    background-size: 50% 80px;
-    animation: animate 15s linear infinite;
+section .wave::after {
+    content: '';
+    width: 100%;
+    height: 119px;
+    background: url(../../assets/wave1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
 }
 
 @keyframes animate {
     0% {
-        transform: translateX(0) translateZ(0) scaleY(1);
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.5);
+        background-position: 0;
     }
     100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1);
+        background-position: 1920px;
+    }
+}
+
+@keyframes animate-reverse {
+    0% {
+        background-position: 1920px;
+    }
+    100% {
+        background-position: 0;
     }
 }

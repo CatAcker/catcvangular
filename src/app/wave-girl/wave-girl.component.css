@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 0%;
+    margin-top: 0%;
+    background: rgb(35, 42, 58);
+}
+
+#Armwave {
+    animation: wavearm 1.5s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes wavearm {
+    from {
+        transform: rotateZ(-20deg) translateX(0) translateY(0);
+    }
+    to {
+        transform: rotateZ(15deg) translateX(-8px) translateY(15.5px);
+    }
+}
