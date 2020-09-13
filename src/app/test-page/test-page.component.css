@@ -1,11 +1,14 @@
 .page-container {
     display: flex;
-    height: 100%;
+    height: 100vh;
+    justify-content: center;
     background: rgb(35, 42, 58)
 }
 
 .page-content-container {
     padding: 50px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .sidebar {
@@ -39,11 +42,6 @@
     color: pink;
 }
 
-.list-item:hover::before {
-    opacity: 0.5;
-    transform: scaleY(0.3) scaleX(2);
-}
-
 .list-item.selected::before {
     opacity: 0.5;
     transform: scaleY(1) scaleX(1);
@@ -59,8 +57,13 @@
     background-color: pink;
     /* set opacity to 0 by default */
     opacity: 0;
-    transform: scaleY(0) scaleX(0);
-    transition: transform 0.2s opacity 0.2s;
+    transform: scaleY(0);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.list-item:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 .list-item .material-icons {

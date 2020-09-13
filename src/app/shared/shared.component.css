@@ -1,12 +1,14 @@
 .container {
-    display: inline-flex;
+    padding: 0rem;
+    width: 80.3vw;
+    height: 100vh;
+    display: flex;
     position: absolute;
-    padding-left: 0%;
-    padding-bottom: 0%;
-    padding-top: 0%;
     left: 300px;
-    width: 1557px;
-    height: 934px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
     background: rgb(35, 42, 58)
 }
 
@@ -83,13 +85,13 @@ ul li a {
 .wave2 {
     -webkit-backface-size: 50% 100px;
     background-size: 50% 100px;
-    animation: animate 12s linear infinite;
+    animation: animate 15s linear infinite;
 }
 
-.wave3s {
+.wave3 {
     -webkit-backface-size: 50% 80px;
     background-size: 50% 80px;
-    animation: animate 12s linear infinite;
+    animation: animate 15s linear infinite;
 }
 
 @keyframes animate {
