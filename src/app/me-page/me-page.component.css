@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-items {
+    padding-top: 100px;
+}
+
+.list-item {
+    /* display: flex; */
+    /* align-items: center; */
+    position: relative;
+    font-size: 25px;
+    color: rgba(140, 107, 216, 0.9);
+    font-family: 'Ranchers', cursive;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: rgb(53, 53, 87);
+    color: rgb(200, 122, 231);
+    font-size: 30px;
+}

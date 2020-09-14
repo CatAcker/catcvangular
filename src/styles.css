@@ -2,9 +2,12 @@
 
 html,
 body {
+    text-align: center;
+    padding: 0%;
+    margin-top: 0%;
     height: 100%;
     margin: 0;
-    font-family: 'Open Sans';
+    background: rgb(35, 42, 58);
 }
 
 h1,
@@ -23,5 +26,13 @@ p {
 a {
     text-decoration: none;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

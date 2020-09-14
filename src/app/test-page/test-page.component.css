@@ -26,7 +26,7 @@
     align-items: center;
     position: relative;
     font-size: 25px;
-    color: rgba(225, 225, 225, 0.9);
+    color: rgba(140, 107, 216, 0.9);
     padding: 10px 20px;
     font-family: Montserra;
     cursor: pointer;
@@ -34,12 +34,12 @@
 
 .list-item.selected {
     background-color: rgb(53, 53, 87);
-    color: pink;
+    color: rgb(200, 122, 231);
 }
 
 .list-item:hover {
     background-color: rgb(53, 53, 87);
-    color: pink;
+    color: rgb(200, 122, 231);
 }
 
 .list-item.selected::before {

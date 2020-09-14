@@ -10,6 +10,7 @@ import { HobbiesPageComponent } from './hobbies-page/hobbies-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { SharedComponent } from './shared/shared.component';
 import { WaveGirlComponent } from './wave-girl/wave-girl.component';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WaveGirlComponent } from './wave-girl/wave-girl.component';
     HobbiesPageComponent,
     SkillsPageComponent,
     SharedComponent,
-    WaveGirlComponent
+    WaveGirlComponent,
+    PersonalInfoComponent
   ],
   imports: [
     BrowserModule,
