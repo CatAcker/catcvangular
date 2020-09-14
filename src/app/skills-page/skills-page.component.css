@@ -28,7 +28,7 @@
     width: 1%;
 }
 
-div #progressBarFull:hover {
+#progressBarFull:hover {
     height: 3.4rem;
     width: 50%;
     background-color: #56a5eb;
