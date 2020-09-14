@@ -1,25 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
-.list-items {
-    padding-top: 100px;
+.flex-center {
+    justify-content: center;
+    align-items: center;
 }
 
-.list-item {
-    /* display: flex; */
-    /* align-items: center; */
-    position: relative;
-    font-size: 25px;
+.justify-center {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Buttons */
+
+.btn {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    width: 30rem;
+    text-align: center;
+    border: 0.5rem solid rgba(140, 107, 216, 0.9);
+    margin-bottom: 1rem;
+    text-decoration: none;
     color: rgba(140, 107, 216, 0.9);
-    font-family: 'Ranchers', cursive;
-    cursor: pointer;
+    background: rgb(35, 42, 58);
 }
 
-.list-item:hover {
-    background-color: rgb(53, 53, 87);
-    color: rgb(200, 122, 231);
-    font-size: 30px;
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(200, 86, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }

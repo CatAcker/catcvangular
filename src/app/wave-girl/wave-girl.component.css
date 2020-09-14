@@ -10,11 +10,28 @@
     transform-box: fill-box;
 }
 
+#ScreenDisplay,
+#Person,
+#Laptop {
+    animation: rest 1.5s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes rest {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(25.5px);
+    }
+}
+
 @keyframes wavearm {
     from {
         transform: rotateZ(-20deg) translateX(0) translateY(0);
     }
     to {
-        transform: rotateZ(15deg) translateX(-8px) translateY(15.5px);
+        transform: rotateZ(15deg) translateX(-8px) translateY(41px);
     }
 }

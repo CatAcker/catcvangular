@@ -1,0 +1,36 @@
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+
+/* progress bar */
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.2rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 1%;
+}
+
+div #progressBarFull:hover {
+    height: 3.4rem;
+    width: 50%;
+    background-color: #56a5eb;
+    transition: 1s;
+}

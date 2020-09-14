@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     justify-content: center;
-    background: rgb(35, 42, 58)
+    background: rgb(35, 42, 58);
 }
 
 .page-content-container {
@@ -25,10 +25,10 @@
     display: flex;
     align-items: center;
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: rgba(140, 107, 216, 0.9);
     padding: 10px 20px;
-    font-family: Montserra;
+    font-family: 'Righteous', cursive;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@
     left: 0;
     height: 100%;
     width: 3px;
-    background-color: pink;
+    background-color: rgb(200, 122, 231);
     /* set opacity to 0 by default */
     opacity: 0;
     transform: scaleY(0);
