@@ -25,12 +25,13 @@
 #progressBarFull {
     height: 3.4rem;
     background-color: #56a5eb;
-    width: 1%;
+    width: 2%;
+    transition: 999999999999s;
 }
 
 #progressBarFull:hover {
     height: 3.4rem;
-    width: 50%;
+    width: 100%;
     background-color: #56a5eb;
-    transition: 1s;
+    transition: 0.2s;
 }

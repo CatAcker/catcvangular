@@ -11,6 +11,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { SharedComponent } from './shared/shared.component';
 import { WaveGirlComponent } from './wave-girl/wave-girl.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { MatTooltipModule } from '@angular/material/tooltip'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
