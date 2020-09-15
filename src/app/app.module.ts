@@ -11,7 +11,8 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { SharedComponent } from './shared/shared.component';
 import { WaveGirlComponent } from './wave-girl/wave-girl.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
-import { MatTooltipModule } from '@angular/material/tooltip'
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatTooltipModule } from '@angular/material/tooltip'
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

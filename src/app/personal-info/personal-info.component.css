@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 72vw;
+}
+
+.drag:hover {
+    cursor: grab;
+}
+
+.colorBox1 {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #21ec2b;
+    margin-top: 1.2rem;
+}

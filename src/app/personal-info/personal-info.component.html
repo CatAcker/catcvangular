@@ -1,1 +1,34 @@
-<p>personal-info works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="page-content-container">
+            <div class="flex-center flex-column">
+                <div style="color: blanchedalmond;">
+
+                    <owl-carousel-o [options]="customOptions" class="drag">
+
+                        <ng-template carouselSlide>
+                            <div class="colorBox1"></div>
+                        </ng-template>
+                        <ng-template carouselSlide>Slide 2</ng-template>
+
+                    </owl-carousel-o>
+
+                </div>
+            </div>
+        </div>
+        <app-shared></app-shared>
+    </div>
+</body>
+
+
+
+</html>

@@ -80,6 +80,7 @@
 }
 
 .profile-picture:hover {
+    -webkit-transform: rotate(360deg);
     border-radius: 50%;
     max-height: 320px;
     margin-left: -12%;
