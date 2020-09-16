@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-@mixin border-radius($radius) {
+
+/* @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
     border-radius: $radius;
-}
+} */
 
 *,
 *:before,
@@ -15,13 +16,14 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     width: 100%;
     height: 100%;
 }
 
 .skills-bar-container {
+    padding-top: 0%;
+    padding-bottom: 70px;
     position: relative;
     width: 40%;
     min-width: 300px;
@@ -40,6 +42,8 @@ li {
 }
 
 .bar-container {
+    background-color: rgb(90, 90, 90);
+    border-radius: 5%;
     position: relative;
     width: 100%;
     height: 20px;
@@ -64,7 +68,7 @@ h3 {
     -webkit-animation-name: progress-html;
     animation-name: progress-html;
     -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    animation-delay: 0s;
 }
 
 #progress-css {
@@ -95,6 +99,27 @@ h3 {
     animation-delay: 1s*5;
 }
 
+#progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: 1s*6;
+    animation-delay: 1s*6;
+}
+
+#progress-csharp {
+    -webkit-animation-name: progress-csharp;
+    animation-name: progress-csharp;
+    -webkit-animation-delay: 1s*6;
+    animation-delay: 1s*6;
+}
+
+#progress-delphi {
+    -webkit-animation-name: progress-delphi;
+    animation-name: progress-delphi;
+    -webkit-animation-delay: 1s*6;
+    animation-delay: 1s*6;
+}
+
 .progressbar {
     position: absolute;
     width: 0%;
@@ -108,24 +133,12 @@ h3 {
     animation-fill-mode: both;
 }
 
-.progressred {
-    background-color: red;
+.progresslightblue {
+    background-color: rgb(0, 255, 255);
 }
 
 .progressblue {
-    background-color: blue;
-}
-
-.progresspurple {
-    background-color: purple;
-}
-
-.progressorange {
-    background-color: orange;
-}
-
-.progressgreen {
-    background-color: green;
+    background-color: rgb(0, 47, 255);
 }
 
 @-webkit-keyframes progress-html {
@@ -133,7 +146,7 @@ h3 {
         width: 0%;
     }
     100% {
-        width: 100%;
+        width: 75%;
     }
 }
 
@@ -173,12 +186,39 @@ h3 {
     }
 }
 
-@-moz-keyframes progress-html {
+@-webkit-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes progress-csharp {
     0% {
         width: 0%;
     }
     100% {
         width: 100%;
+    }
+}
+
+@-webkit-keyframes progress-delphi {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@-moz-keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
     }
 }
 
@@ -218,12 +258,39 @@ h3 {
     }
 }
 
-@keyframes progress-html {
+@-moz-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes progress-csharp {
     0% {
         width: 0%;
     }
     100% {
         width: 100%;
+    }
+}
+
+@-moz-keyframes progress-delphi {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
     }
 }
 
@@ -260,5 +327,32 @@ h3 {
     }
     100% {
         width: 65%;
+    }
+}
+
+@keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progress-csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progress-delphi {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
     }
 }
