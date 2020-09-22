@@ -2,5 +2,6 @@
 
 .box {
     display: flex;
-    padding-left: 297px;
+    display: inline-flex;
+    padding-bottom: 20px;
 }
