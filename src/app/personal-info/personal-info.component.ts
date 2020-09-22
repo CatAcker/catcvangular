@@ -28,7 +28,9 @@ export class PersonalInfoComponent implements OnInit {
       300: {
         items: 2
       },
-      
+      700: {
+        items: 3
+      },
     },
     nav: true
   }

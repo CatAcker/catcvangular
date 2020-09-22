@@ -1,4 +1,4 @@
-* {
+.inBoxing {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,9 +9,40 @@
     cursor: grab;
 }
 
-.colorBox1 {
-    width: 20rem;
-    height: 4rem;
-    border: 0.3rem solid #21ec2b;
-    margin-top: 1.2rem;
+.mainStyle {
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(53, 53, 87);
+    text-shadow: 1px -1px 1px rgb(200, 122, 231), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.innerText {
+    text-shadow: none;
+    text-transform: none;
+    color: rgb(200, 122, 231);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.iconColor {
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(0, 0, 0);
+    color: rgb(53, 53, 87);
+    text-shadow: 1px -1px 1px rgb(200, 122, 231), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+    padding-right: 5px;
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: flex;
+    padding-left: 297px;
+    padding-bottom: 30px;
 }

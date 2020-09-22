@@ -9,7 +9,6 @@
 
 <body>
     <div class="page-container">
-
         <div class="sidebar">
             <img src="../../assets/me.jpg" class="profile-picture">
             <div class="list-items">
@@ -28,13 +27,25 @@
                         bookmark
                     </i>Skills
                 </a>
+                <a routerLink="/personalInfo" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Achievements ('13-'20)
+                </a>
             </div>
 
         </div>
+
         <div class="page-content-container">
+
             <router-outlet></router-outlet>
+
+
+
         </div>
         <app-shared></app-shared>
+
+
     </div>
 </body>
 

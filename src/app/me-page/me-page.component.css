@@ -44,3 +44,11 @@
     box-shadow: none;
     transform: none;
 }
+
+
+/* HEADING CONT. */
+
+.box {
+    display: flex;
+    padding-left: 297px;
+}
