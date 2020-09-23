@@ -1,7 +1,6 @@
 /* HEADING CONT. */
 
 .box {
-    display: flex;
     display: inline-flex;
     padding-bottom: 20px;
 }

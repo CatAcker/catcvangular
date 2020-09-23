@@ -1,12 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-
-/* @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-} */
-
 *,
 *:before,
 *:after {
@@ -22,17 +14,40 @@ body {
     height: 100%;
 }
 
-.skills-bar-container {
+.programming-skills-bar-container {
     padding-top: 0%;
     padding-bottom: 70px;
     position: relative;
     width: 40%;
     min-width: 300px;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 20%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     list-style: none;
+}
+
+.language-skills-bar-container {
+    padding-top: 0%;
+    padding-bottom: 70px;
+    position: relative;
+    width: 40%;
+    min-width: 300px;
+    top: -72.5%;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    text-decoration: underline;
 }
 
 li {
@@ -53,7 +68,12 @@ li {
 }
 
 .progressbar-title {
+    font-family: 'Righteous', fantasy;
     color: rgb(200, 122, 231);
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(53, 53, 87);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(0, 0, 0), 1px 3px 1px rgb(0, 0, 0), 1px 4px 1px rgb(104, 104, 104);
+    padding-right: 5px;
 }
 
 h3 {
@@ -363,6 +383,6 @@ h3 {
 /* HEADING CONT. */
 
 .box {
-    display: flex;
+    display: inline-flex;
     padding-bottom: 20px;
 }
