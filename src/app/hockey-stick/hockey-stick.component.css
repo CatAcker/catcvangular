@@ -1,17 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
     box-sizing: border-box;
 }
 
+body,
 html {
-    width: 50%;
-    height: 50%;
+    padding-top: 20px;
+    height: 200px;
+    width: 170px;
 }
 
-body {
-    padding-top: 20px;
-    padding-left: 75px;
+html {
+    padding-top: 0;
 }
 
 #Stick {

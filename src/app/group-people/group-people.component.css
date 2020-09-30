@@ -14,12 +14,13 @@ html {
     padding-top: 0;
 }
 
-#FrontFoot {
-    animation: frontleg 1s linear infinite alternate;
+#Back {
+    animation: back 1s linear infinite alternate;
     transform-origin: bottom;
+    transform-box: fill-box;
 }
 
-@keyframes frontleg {
+@keyframes back {
     from {
         transform: translateY(0);
     }
@@ -28,17 +29,17 @@ html {
     }
 }
 
-#BackFoot {
-    animation: backleg 1s linear infinite alternate;
+#Front {
+    animation: front 1s linear infinite alternate;
     transform-origin: top;
     transform-box: fill-box;
 }
 
-@keyframes backleg {
+@keyframes front {
     from {
-        transform: rotateZ(0) translateX(0) translateY(0);
+        transform: translateY(0);
     }
     to {
-        transform: rotateZ(8deg) translateX(10px) translateY(-15.5px);
+        transform: translateY(15.5px);
     }
 }

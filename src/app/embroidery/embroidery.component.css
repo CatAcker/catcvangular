@@ -1,12 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
     box-sizing: border-box;
 }
 
-body {
-    padding-top: 15px;
-    padding-left: 80px;
+body,
+html {
+    padding-top: 20px;
+    height: 200px;
+    width: 170px;
+}
+
+html {
+    padding-top: 0;
 }
 
 #Needle {

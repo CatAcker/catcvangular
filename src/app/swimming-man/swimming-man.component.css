@@ -1,0 +1,75 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding-top: 20px;
+    height: 200px;
+    width: 170px;
+}
+
+html {
+    padding-top: 0;
+}
+
+#TopWave {
+    animation: Topwave 1.5s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes Topwave {
+    from {
+        transform: translateX(-15px);
+    }
+    to {
+        transform: translateX(15px);
+    }
+}
+
+#UnderWave {
+    animation: underwave 1.5s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes underwave {
+    from {
+        transform: translateX(15px);
+    }
+    to {
+        transform: translateX(-15px);
+    }
+}
+
+#Body {
+    animation: bodymove 1s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes bodymove {
+    from {
+        transform: translateX(-15px) translateY(-15px);
+    }
+    to {
+        transform: translateX(20px) translateY(7px);
+    }
+}
+
+#Head {
+    animation: headmove 1s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes headmove {
+    from {
+        transform: translateX(-10px) translateY(-7px);
+    }
+    to {
+        transform: translateX(10px) translateY(-12px);
+    }
+}
