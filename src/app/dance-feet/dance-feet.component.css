@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+#FrontFoot {
+    animation: frontleg 1s linear infinite alternate;
+    transform-origin: bottom;
+    /* transform-box: fill-box; */
+}
+
+@keyframes frontleg {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15.5px);
+    }
+}
+
+#BackFoot {
+    animation: backleg 1s linear infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes backleg {
+    from {
+        transform: rotateZ(0) translateX(0) translateY(0);
+    }
+    to {
+        transform: rotateZ(8deg) translateX(10px) translateY(-15.5px);
+    }
+}

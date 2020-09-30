@@ -13,6 +13,10 @@ import { WaveGirlComponent } from './wave-girl/wave-girl.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HockeyStickComponent } from './hockey-stick/hockey-stick.component';
+import { SwimmingManComponent } from './swimming-man/swimming-man.component';
+import { EmbroideryComponent } from './embroidery/embroidery.component';
+import { DanceFeetComponent } from './dance-feet/dance-feet.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     SkillsPageComponent,
     SharedComponent,
     WaveGirlComponent,
-    PersonalInfoComponent
+    PersonalInfoComponent,
+    HockeyStickComponent,
+    SwimmingManComponent,
+    EmbroideryComponent,
+    DanceFeetComponent
   ],
   imports: [
     BrowserModule,
