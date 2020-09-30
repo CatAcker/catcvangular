@@ -6,6 +6,8 @@
 }
 
 .page-content-container {
+    margin: auto;
+    box-sizing: border-box;
     padding: 50px;
     width: 100vw;
     height: 100vh;
