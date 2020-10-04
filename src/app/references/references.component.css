@@ -18,6 +18,7 @@
     background-repeat: no-repeat;
     -webkit-transform: translate(0%, 0%);
     transform: translate(30%, 0%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
 }
 
 .box_item2 {
@@ -36,6 +37,7 @@
     background-repeat: no-repeat;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(120%, 27%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
 }
 
 .box_item:hover,
@@ -43,6 +45,7 @@
     font-size: 0;
     background-color: rgba(160, 79, 192, 0.603);
     color: rgb(255, 255, 255);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2), 1px 2px 1px rgba(0, 0, 0, 0.2), 1px 3px 1px rgba(0, 0, 0, 0.2), 1px 4px 1px rgba(0, 0, 0, 0.2), 1px 5px 1px rgba(0, 0, 0, 0.2), 1px 6px 1px rgba(0, 0, 0, 0.2), 1px 7px 1px rgba(0, 0, 0, 0.2), 1px 8px 1px rgba(0, 0, 0, 0.2), 1px 18px 6px rgb(200, 122, 231), 1px 22px 10px rgb(200, 122, 231), 1px 25px 35px rgb(200, 122, 231), 1px 30px 60px rgb(200, 122, 231);
 }
 
 .box_item:hover::after {
@@ -60,4 +63,12 @@
     font-weight: 90;
     align-items: center;
     justify-content: center;
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: inline-flex;
+    padding-bottom: 20px;
 }
