@@ -6,6 +6,7 @@ import { HobbiesPageComponent } from './hobbies-page/hobbies-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { ReferencesComponent } from './references/references.component';
+import { EducationComponent } from './education/education.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
     {path: 'hobbies', component: HobbiesPageComponent},
     {path: 'skills', component: SkillsPageComponent},
     {path: 'personalInfo', component: PersonalInfoComponent},
-    {path: 'references', component: ReferencesComponent}
+    {path: 'references', component: ReferencesComponent},
+    {path: 'education', component: EducationComponent}
   ]}
 ];
 
