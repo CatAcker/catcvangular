@@ -18,6 +18,7 @@ import { SwimmingManComponent } from './swimming-man/swimming-man.component';
 import { EmbroideryComponent } from './embroidery/embroidery.component';
 import { DanceFeetComponent } from './dance-feet/dance-feet.component';
 import { GroupPeopleComponent } from './group-people/group-people.component';
+import { ReferencesComponent } from './references/references.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { GroupPeopleComponent } from './group-people/group-people.component';
     SwimmingManComponent,
     EmbroideryComponent,
     DanceFeetComponent,
-    GroupPeopleComponent
+    GroupPeopleComponent,
+    ReferencesComponent
   ],
   imports: [
     BrowserModule,
