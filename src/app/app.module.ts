@@ -20,6 +20,7 @@ import { DanceFeetComponent } from './dance-feet/dance-feet.component';
 import { GroupPeopleComponent } from './group-people/group-people.component';
 import { ReferencesComponent } from './references/references.component';
 import { EducationComponent } from './education/education.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EducationComponent } from './education/education.component';
     DanceFeetComponent,
     GroupPeopleComponent,
     ReferencesComponent,
-    EducationComponent
+    EducationComponent,
+    ContactInfoComponent
   ],
   imports: [
     BrowserModule,

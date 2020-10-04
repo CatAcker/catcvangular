@@ -7,7 +7,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { ReferencesComponent } from './references/references.component';
 import { EducationComponent } from './education/education.component';
-
+import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 const routes: Routes = [
   {path: '',component: TestPageComponent, children:[
@@ -16,7 +16,8 @@ const routes: Routes = [
     {path: 'skills', component: SkillsPageComponent},
     {path: 'personalInfo', component: PersonalInfoComponent},
     {path: 'references', component: ReferencesComponent},
-    {path: 'education', component: EducationComponent}
+    {path: 'education', component: EducationComponent},
+    {path: 'contactInfo', component: ContactInfoComponent}
   ]}
 ];
 

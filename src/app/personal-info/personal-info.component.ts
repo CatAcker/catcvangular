@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FlexAlignDirective } from '@angular/flex-layout';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
