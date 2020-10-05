@@ -175,3 +175,19 @@ body {
     text-shadow: none;
     text-transform: none;
 }
+
+.box {
+    display: inline-flex;
+    padding-bottom: 100px;
+}
+
+
+/* PAGE */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}

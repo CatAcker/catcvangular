@@ -110,3 +110,14 @@
     display: inline-flex;
     padding-bottom: 20px;
 }
+
+
+/* PAGE */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}
