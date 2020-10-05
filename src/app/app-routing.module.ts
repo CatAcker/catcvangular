@@ -8,6 +8,7 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { ReferencesComponent } from './references/references.component';
 import { EducationComponent } from './education/education.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 const routes: Routes = [
   {path: '',component: TestPageComponent, children:[
@@ -17,7 +18,8 @@ const routes: Routes = [
     {path: 'personalInfo', component: PersonalInfoComponent},
     {path: 'references', component: ReferencesComponent},
     {path: 'education', component: EducationComponent},
-    {path: 'contactInfo', component: ContactInfoComponent}
+    {path: 'contactInfo', component: ContactInfoComponent},
+    {path: 'achievements', component: AchievementsComponent}
   ]}
 ];
 

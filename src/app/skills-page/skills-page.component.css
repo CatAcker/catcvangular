@@ -18,7 +18,7 @@ body {
     padding-top: 0%;
     padding-bottom: 70px;
     position: relative;
-    width: 40%;
+    width: 40% !important;
     min-width: 300px;
     top: 40%;
     left: 20%;
@@ -28,20 +28,20 @@ body {
 }
 
 .language-skills-bar-container {
-    padding-top: 0%;
+    padding-top: 50px;
     padding-bottom: 70px;
     position: relative;
-    width: 40%;
+    width: 40% !important;
     min-width: 300px;
     top: -72.5%;
     left: 80%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
     list-style: none;
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 18px;
 }
 
 h4 {
@@ -60,9 +60,10 @@ li {
 .bar-container {
     background-color: rgb(90, 90, 90);
     border-radius: 5%;
-    position: relative;
+    position: fixed;
+    flex-direction: column;
     width: 100%;
-    height: 20px;
+    height: 10px;
     margin-top: 5px;
     display: flex;
 }
@@ -74,6 +75,7 @@ li {
     outline: rgb(53, 53, 87);
     text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(0, 0, 0), 1px 3px 1px rgb(0, 0, 0), 1px 4px 1px rgb(104, 104, 104);
     padding-right: 5px;
+    padding-top: 5px;
 }
 
 h3 {

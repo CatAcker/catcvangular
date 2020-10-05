@@ -21,6 +21,10 @@ import { GroupPeopleComponent } from './group-people/group-people.component';
 import { ReferencesComponent } from './references/references.component';
 import { EducationComponent } from './education/education.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { TeximateModule } from 'ngx-teximate';
+import { AchievementsComponent } from './achievements/achievements.component';
+
+
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
     GroupPeopleComponent,
     ReferencesComponent,
     EducationComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,8 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
     FormsModule,
     BrowserAnimationsModule,
     MatTooltipModule,
-    CarouselModule
+    CarouselModule,
+    TeximateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

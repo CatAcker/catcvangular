@@ -1,23 +1,177 @@
-.inBoxing {
-    margin: 0;
-    padding: 0;
+/* HEADING CONT. */
+
+.box {
+    display: flex;
+    display: inline-flex;
+    padding-bottom: 20px;
+}
+
+
+/* BADGECARD */
+
+.content,
+.firstinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-    width: 72vw;
 }
 
-.drag:hover {
-    cursor: grab;
+.content {
+    position: relative;
+    padding-top: 50px;
+    animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
 }
 
-.mainStyle {
+.card {
+    width: 550px;
+    min-height: 100px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:after {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 360px;
+    background: rgb(89, 5, 110);
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+}
+
+.badgescard {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: rgb(106, 51, 119);
+    width: 480px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+
+.badgescard span {
+    font-size: 1.6em;
+    margin: 0px 6px;
+    opacity: 0.6;
+}
+
+.firstinfo {
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+}
+
+.firstinfo .profileinfo1 {
+    padding: 0px 20px;
+}
+
+.firstinfo .profileinfo1 h1,
+.firstinfo .profileinfoS h1,
+.firstinfo .profileinfoW h1 {
     text-transform: uppercase;
     font-family: 'Righteous', cursive;
     text-shadow: rgb(255, 255, 255);
-    outline: rgb(0, 0, 0);
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 45px;
     color: rgb(53, 53, 87);
-    text-shadow: 1px -1px 1px rgb(200, 122, 231), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+    text-shadow: 1px -1px 1px rgb(200, 122, 231), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.firstinfo .profileinfoS h1 {
+    color: rgba(60, 255, 0, 0.534);
+    text-shadow: 1px -1px 1px rgb(0, 0, 0), 1px 0px 1px rgb(69, 69, 114), 1px 1px 1px rgb(69, 69, 114), 1px 2px 1px rgb(69, 69, 114), 1px 3px 1px rgb(69, 69, 114), 1px 4px 1px rgb(69, 69, 114), 1px 5px 1px rgb(69, 69, 114), 1px 6px 1px rgb(69, 69, 114), 1px 7px 1px rgb(69, 69, 114), 1px 8px 1px rgb(69, 69, 114), 1px 18px 6px rgba(11, 13, 17, 0.4), 1px 22px 10px rgba(11, 13, 17, 0.4), 1px 25px 35px rgba(11, 13, 17, 0.4), 1px 30px 60px rgba(11, 13, 17, 0.4);
+}
+
+.firstinfo .profileinfoW h1 {
+    color: rgba(255, 0, 0, 0.534);
+    text-shadow: 1px -1px 1px rgb(0, 0, 0), 1px 0px 1px rgb(69, 69, 114), 1px 1px 1px rgb(69, 69, 114), 1px 2px 1px rgb(69, 69, 114), 1px 3px 1px rgb(69, 69, 114), 1px 4px 1px rgb(69, 69, 114), 1px 5px 1px rgb(69, 69, 114), 1px 6px 1px rgb(69, 69, 114), 1px 7px 1px rgb(69, 69, 114), 1px 8px 1px rgb(69, 69, 114), 1px 18px 6px rgba(11, 13, 17, 0.4), 1px 22px 10px rgba(11, 13, 17, 0.4), 1px 25px 35px rgba(11, 13, 17, 0.4), 1px 30px 60px rgba(11, 13, 17, 0.4);
+}
+
+.firstinfo .profileinfo1 h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.firstinfo .profileinfo1 p.bio {
+    padding: 10px 0px;
+    font-size: 25px;
+    color: rgb(200, 122, 231);
+    line-height: 1.4;
+    font-family: 'Righteous', cursive;
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+
+.iconColorS,
+.iconColorW {
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(53, 53, 87);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
+    padding-right: 5px;
+}
+
+.iconColorS {
+    color: rgba(60, 255, 0, 0.534);
+}
+
+.iconColorW {
+    color: rgba(255, 0, 0, 0.534);
 }
 
 .innerText {
@@ -28,21 +182,4 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     text-align: left;
-}
-
-.iconColor {
-    text-shadow: rgb(255, 255, 255);
-    outline: rgb(53, 53, 87);
-    color: rgb(200, 122, 231);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
-    padding-right: 5px;
-}
-
-
-/* HEADING CONT. */
-
-.box {
-    display: flex;
-    display: inline-flex;
-    padding-bottom: 20px;
 }

@@ -12,7 +12,7 @@ body {
     border-radius: 5%;
     position: relative;
     width: 1000px;
-    height: 300px;
+    height: 250px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -37,7 +37,7 @@ body {
     position: absolute;
     width: 0%;
     height: 100%;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-timing-function: ease-out;
@@ -114,7 +114,7 @@ body {
 
 .box {
     display: inline-flex;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 
@@ -141,37 +141,37 @@ body {
 }
 
 .innerText2 {
-    padding-top: 50px;
-    text-shadow: none;
-    text-transform: none;
     color: rgb(200, 122, 231);
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 300;
 }
 
 .iconColor2 {
-    text-shadow: rgb(255, 255, 255);
     outline: rgb(53, 53, 87);
     color: rgb(200, 122, 231);
     text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
-    padding-right: 5px;
 }
 
 .innerText {
-    padding-top: 50px;
-    text-shadow: none;
-    text-transform: none;
     color: rgb(53, 53, 87);
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 300;
 }
 
 .iconColor {
-    text-shadow: rgb(255, 255, 255);
     color: rgb(53, 53, 87);
     outline: rgb(200, 122, 231);
     text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
+}
+
+.iconColor,
+.iconColor2 {
     padding-right: 5px;
+    text-shadow: rgb(255, 255, 255);
+}
+
+.innerText,
+.innerText2 {
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-top: 20px;
+    text-shadow: none;
+    text-transform: none;
 }

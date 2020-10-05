@@ -19,7 +19,7 @@ section .wave {
 
 section .wave::before {
     content: '';
-    width: 100%;
+    width: 100vw;
     height: 119px;
     background: url(../../assets/wave1.png);
     position: absolute;
@@ -32,7 +32,7 @@ section .wave::before {
 
 section .wave::after {
     content: '';
-    width: 100%;
+    width: 100vw;
     height: 119px;
     background: url(../../assets/wave1.png);
     position: absolute;

@@ -1,6 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box_item,
+.box_item2,
+.box_item3,
+.box_item4,
+.box_item5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(140, 107, 216, 0.9);
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    font-weight: 550;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box_item {
+    width: 70%;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(30%, 0%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item2 {
+    width: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(100%, -17%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item3 {
+    width: 70%;
+    -webkit-transform: translate(-100%, -100%);
+    transform: translate(30%, -17%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item4 {
+    width: 40%;
+    -webkit-transform: translate(-100%, -100%);
+    transform: translate(30%, -17%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item5 {
+    width: 40%;
+    -webkit-transform: translate(-100%, -100%);
+    transform: translate(90%, -17%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item5:hover {
+    background-color: rgba(160, 79, 192, 0.603);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2), 1px 2px 1px rgba(0, 0, 0, 0.2), 1px 3px 1px rgba(0, 0, 0, 0.2), 1px 4px 1px rgba(0, 0, 0, 0.2), 1px 5px 1px rgba(0, 0, 0, 0.2), 1px 6px 1px rgba(0, 0, 0, 0.2), 1px 7px 1px rgba(0, 0, 0, 0.2), 1px 8px 1px rgba(0, 0, 0, 0.2), 1px 18px 6px rgb(200, 122, 231), 1px 22px 10px rgb(200, 122, 231), 1px 25px 35px rgb(200, 122, 231);
+}
+
+.box_item:hover,
+.box_item2:hover,
+.box_item3:hover,
+.box_item4:hover {
+    font-size: 0;
+    background-color: rgba(160, 79, 192, 0.603);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2), 1px 2px 1px rgba(0, 0, 0, 0.2), 1px 3px 1px rgba(0, 0, 0, 0.2), 1px 4px 1px rgba(0, 0, 0, 0.2), 1px 5px 1px rgba(0, 0, 0, 0.2), 1px 6px 1px rgba(0, 0, 0, 0.2), 1px 7px 1px rgba(0, 0, 0, 0.2), 1px 8px 1px rgba(0, 0, 0, 0.2), 1px 18px 6px rgb(200, 122, 231), 1px 22px 10px rgb(200, 122, 231), 1px 25px 35px rgb(200, 122, 231);
+}
+
+.box_item:hover::after {
+    content: attr(data-field);
+}
+
+.box_item2:hover::after {
+    content: attr(data-field);
+}
+
+.box_item3:hover::after {
+    content: attr(data-field);
+}
+
+.box_item4:hover::after {
+    content: attr(data-field);
+}
+
+.box_item:hover::after,
+.box_item2:hover::after,
+.box_item3:hover::after,
+.box_item4:hover::after {
+    font-size: 35px;
+    font-weight: 90;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
+}
+
+.itemContact {
+    padding-top: 50px;
+}
+
+
 /* HEADING CONT. */
 
 .box {
     display: inline-flex;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
