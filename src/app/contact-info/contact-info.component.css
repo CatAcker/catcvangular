@@ -15,7 +15,7 @@
     color: rgba(140, 107, 216, 0.9);
     padding: 10px;
     font-family: 'Righteous', cursive;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 550;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,6 +66,7 @@
 .box_item2:hover,
 .box_item3:hover,
 .box_item4:hover {
+    cursor: pointer;
     font-size: 0;
     background-color: rgba(160, 79, 192, 0.603);
     color: rgb(255, 255, 255);
@@ -92,7 +93,7 @@
 .box_item2:hover::after,
 .box_item3:hover::after,
 .box_item4:hover::after {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 90;
     align-items: center;
     justify-content: center;
@@ -100,7 +101,7 @@
 }
 
 .itemContact {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 
@@ -108,7 +109,7 @@
 
 .box {
     display: inline-flex;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
 }
 
 
