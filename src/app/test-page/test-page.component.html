@@ -12,6 +12,8 @@
         <div class="sidebar">
             <img src="../../assets/me.jpg" class="profile-picture">
             <div class="list-items">
+                <app-shared></app-shared>
+
                 <a routerLink="/me" routerLinkActive="selected" class="list-item">
                     <i class="material-icons">
                         bookmark
@@ -47,14 +49,15 @@
                         bookmark
                     </i>Contact Information
                 </a>
+
             </div>
+
 
         </div>
 
         <div class="page-content-container">
             <router-outlet></router-outlet>
         </div>
-        <app-shared></app-shared>
 
 
     </div>

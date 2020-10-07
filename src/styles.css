@@ -52,15 +52,15 @@ body {
 }
 
 .box .inner:first-child {
-    background-color: rgb(53, 53, 87);
+    background-color: rgba(53, 53, 87, 0.5);
     color: rgb(200, 122, 231);
     transform-origin: right;
     transform: perspective(100px) rotateY(-15deg);
 }
 
 .box .inner:last-child {
-    background-color: rgb(200, 122, 231);
-    color: rgb(53, 53, 87);
+    background-color: rgba(200, 122, 231, 0.5);
+    color: rgb(66, 53, 87);
     transform-origin: left;
     transform: perspective(100px) rotateY(15deg);
 }
