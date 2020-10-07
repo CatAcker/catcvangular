@@ -19,8 +19,8 @@
     color: rgba(140, 107, 216, 0.9);
     padding: 10px;
     font-family: 'Righteous', cursive;
-    font-size: 50px;
-    font-weight: 650;
+    font-size: 45px;
+    font-weight: 600;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -34,6 +34,7 @@
 
 .box_item:hover,
 .box_item2:hover {
+    cursor: pointer;
     font-size: 0;
     background-color: rgba(160, 79, 192, 0.603);
     color: rgb(255, 255, 255);
@@ -50,9 +51,9 @@
 
 .box_item:hover::after,
 .box_item2:hover::after {
-    font-size: 50px;
-    line-height: 50px;
-    font-weight: 90;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 70;
     align-items: center;
     justify-content: center;
     white-space: pre-wrap;
@@ -63,7 +64,7 @@
 
 .box {
     display: inline-flex;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
