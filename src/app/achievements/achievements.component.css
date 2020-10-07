@@ -1,0 +1,59 @@
+.inBoxing {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 72vw;
+}
+
+.drag:hover {
+    cursor: grab;
+}
+
+.mainStyle {
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(0, 0, 0);
+    font-size: 65px;
+    font-weight: 500;
+    color: rgb(148, 86, 143);
+    text-shadow: 1px -1px 1px rgb(0, 0, 0), 1px 0px 1px rgb(0, 0, 0), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4);
+}
+
+.innerText {
+    text-shadow: none;
+    text-transform: none;
+    color: rgb(200, 122, 231);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.iconColor {
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(53, 53, 87);
+    color: rgb(200, 122, 231);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
+    padding-right: 5px;
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: inline-flex;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+
+/* PAGE */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}

@@ -1,0 +1,193 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flexbox;
+    padding-bottom: 20px;
+}
+
+.bar-container {
+    left: 50px;
+    border-radius: 5%;
+    position: relative;
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress-uni {
+    -webkit-animation-name: progress-uni;
+    animation-name: progress-uni;
+    -webkit-animation-delay: 1s;
+    animation-delay: 0s;
+}
+
+#progress-highschool {
+    -webkit-animation-name: progress-highschool;
+    animation-name: progress-highschool;
+    -webkit-animation-delay: 1s*2;
+    animation-delay: 1s*2;
+}
+
+.progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    /* border-radius: 5px; */
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.progresslightblue {
+    background-color: rgb(200, 122, 231);
+    ;
+}
+
+.progressblue {
+    background-color: rgb(69, 69, 114);
+}
+
+@-webkit-keyframes progress-uni {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes progress-highschool {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes progress-uni {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes progress-highschool {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progress-uni {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progress-highschool {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: inline-flex;
+    padding-bottom: 30px;
+}
+
+
+/* TEXT STYLING */
+
+.mainStyle {
+    color: rgb(53, 53, 87);
+    text-shadow: 1px -1px 1px rgb(200, 122, 231), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.mainStyle,
+.mainStyle2 {
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.mainStyle2 {
+    color: rgb(200, 122, 231);
+    text-shadow: 1px -1px 1px rgb(69, 69, 114), 1px 0px 1px rgb(69, 69, 114), 1px 1px 1px rgb(69, 69, 114), 1px 2px 1px rgb(69, 69, 114), 1px 3px 1px rgb(69, 69, 114), 1px 4px 1px rgb(69, 69, 114), 1px 5px 1px rgb(69, 69, 114), 1px 6px 1px rgb(69, 69, 114), 1px 7px 1px rgb(69, 69, 114), 1px 8px 1px rgb(69, 69, 114), 1px 18px 6px rgba(11, 13, 17, 0.4), 1px 22px 10px rgba(11, 13, 17, 0.4), 1px 25px 35px rgba(11, 13, 17, 0.4), 1px 30px 60px rgba(11, 13, 17, 0.4);
+}
+
+.innerText2 {
+    color: rgb(200, 122, 231);
+}
+
+.iconColor2 {
+    outline: rgb(53, 53, 87);
+    color: rgb(200, 122, 231);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
+}
+
+.innerText {
+    color: rgb(53, 53, 87);
+}
+
+.iconColor {
+    color: rgb(53, 53, 87);
+    outline: rgb(200, 122, 231);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 2px 1px rgb(221, 205, 228), 1px 3px 1px rgb(221, 205, 228), 1px 4px 1px rgb(221, 205, 228);
+}
+
+.iconColor,
+.iconColor2 {
+    padding-right: 5px;
+    text-shadow: rgb(255, 255, 255);
+}
+
+.innerText,
+.innerText2 {
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-top: 20px;
+    text-shadow: none;
+    text-transform: none;
+}
+
+.box {
+    display: inline-flex;
+    padding-bottom: 100px;
+}
+
+
+/* PAGE */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}

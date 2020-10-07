@@ -1,0 +1,54 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Buttons */
+
+.btn {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    width: 30rem;
+    text-align: center;
+    border: 0.5rem solid rgba(140, 107, 216, 0.9);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgba(140, 107, 216, 0.9);
+    background: rgb(35, 42, 58);
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(200, 86, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: flex;
+    padding-left: 297px;
+}

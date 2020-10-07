@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box_item {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(30%, 0%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item,
+.box_item2 {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(140, 107, 216, 0.9);
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    font-weight: 650;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box_item2 {
+    left: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(130%, -17%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgb(200, 122, 231), 1px 1px 1px rgb(200, 122, 231), 1px 2px 1px rgb(200, 122, 231), 1px 3px 1px rgb(200, 122, 231), 1px 4px 1px rgb(200, 122, 231), 1px 5px 1px rgb(200, 122, 231), 1px 6px 1px rgb(200, 122, 231), 1px 7px 1px rgb(200, 122, 231), 1px 8px 1px rgb(200, 122, 231), 1px 18px 6px rgba(35, 42, 58, 0.4), 1px 22px 10px rgba(35, 42, 58, 0.2), 1px 25px 35px rgba(35, 42, 58, 0.2), 1px 30px 60px rgba(35, 42, 58, 0.4);
+}
+
+.box_item:hover,
+.box_item2:hover {
+    font-size: 0;
+    background-color: rgba(160, 79, 192, 0.603);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2), 1px 2px 1px rgba(0, 0, 0, 0.2), 1px 3px 1px rgba(0, 0, 0, 0.2), 1px 4px 1px rgba(0, 0, 0, 0.2), 1px 5px 1px rgba(0, 0, 0, 0.2), 1px 6px 1px rgba(0, 0, 0, 0.2), 1px 7px 1px rgba(0, 0, 0, 0.2), 1px 8px 1px rgba(0, 0, 0, 0.2), 1px 18px 6px rgb(200, 122, 231), 1px 22px 10px rgb(200, 122, 231), 1px 25px 35px rgb(200, 122, 231);
+}
+
+.box_item:hover::after {
+    content: attr(data-place) "\A" attr(data-tel1) '\A' attr(data-tel2)'\A'attr(data-mail);
+}
+
+.box_item2:hover::after {
+    content: attr(data-place)'\A'attr(data-mail) '\A' attr(data-achiev1)',\A'attr(data-achiev2)'\A'attr(data-achiev3);
+}
+
+.box_item:hover::after,
+.box_item2:hover::after {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 90;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: inline-flex;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+
+/* PAGE */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}

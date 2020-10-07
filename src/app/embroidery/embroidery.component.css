@@ -1,0 +1,45 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding-top: 20px;
+    height: 200px;
+    width: 170px;
+}
+
+html {
+    padding-top: 0;
+}
+
+#Needle {
+    animation: needlemove 1.5s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes needlemove {
+    from {
+        transform: rotateZ(-20deg) translateX(0) translateY(0);
+    }
+    to {
+        transform: rotateZ(10deg) translateX(8px) translateY(15.5px);
+    }
+}
+
+#Picture {
+    animation: Picturemove 2s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes Picturemove {
+    from {
+        transform: translateX(-2px) translateY(-2px);
+    }
+    to {
+        transform: translateX(0px) translateY(5px);
+    }
+}

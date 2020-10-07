@@ -1,0 +1,44 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding-top: 20px;
+    height: 200px;
+    width: 170px;
+}
+
+html {
+    padding-top: 0;
+}
+
+#FrontFoot {
+    animation: frontleg 1s linear infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes frontleg {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15.5px);
+    }
+}
+
+#BackFoot {
+    animation: backleg 1s linear infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes backleg {
+    from {
+        transform: rotateZ(0) translateX(0) translateY(0);
+    }
+    to {
+        transform: rotateZ(8deg) translateX(10px) translateY(-15.5px);
+    }
+}

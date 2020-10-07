@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    text-align: center;
+    padding: 0%;
+    margin-top: 0%;
+    height: 100%;
+    margin: 0;
+    background: rgb(35, 42, 58);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/* HEADING */
+
+.box .inner {
+    width: 450px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 4em;
+    font-family: sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box .inner:first-child {
+    background-color: rgb(53, 53, 87);
+    color: rgb(200, 122, 231);
+    transform-origin: right;
+    transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+    background-color: rgb(200, 122, 231);
+    color: rgb(53, 53, 87);
+    transform-origin: left;
+    transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+    position: absolute;
+    animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+    animation-delay: 2.5s;
+    left: -100%;
+}
+
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}

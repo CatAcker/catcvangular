@@ -1,0 +1,88 @@
+<body>
+    <div class="page-container">
+        <div class="page-content-container">
+            <!-- Heading -->
+            <div class="box">
+                <div class="inner">
+                    <span>Hobbies&Sports</span>
+                </div>
+                <div class="inner">
+                    <span>Hobbies&Sports</span>
+                </div>
+            </div>
+            <!-- Carousel -->
+
+            <div class="page-container inBoxing">
+                <!-- <div class="page-content-container"> -->
+                <div class="flex-center flex-column">
+                    <div class="mainStyle">
+                        <owl-carousel-o [options]="customOptions" class="drag">
+                            <ng-template carouselSlide>
+                                Hockey
+                                <br>
+                                <div class="innerText">
+                                    <app-hockey-stick></app-hockey-stick>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                embroidery
+                                <br>
+                                <div class="innerText">
+                                    <app-embroidery></app-embroidery>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                Dance
+                                <br>
+                                <div class="innerText">
+                                    <div>
+                                        <i class="material-icons iconColor">
+                                                star
+                                            </i>RAD (Royal Academy Of Dance(2005 - 2017))
+                                    </div>
+                                    <app-dance-feet></app-dance-feet>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                Hostel Sports('18-'20)
+                                <br>
+                                <div class="innerText">
+                                    <div>
+                                        <i class="material-icons iconColor">
+                                                star
+                                            </i>Hockey
+                                    </div>
+                                    <div>
+                                        <i class="material-icons iconColor">
+                                                star
+                                            </i>Badminton
+                                    </div>
+                                    <div>
+                                        <i class="material-icons iconColor">
+                                                star
+                                            </i>Soccer
+                                    </div>
+                                    <div>
+                                        <i class="material-icons iconColor">
+                                                star
+                                            </i>Squash
+                                    </div>
+                                    <app-group-people></app-group-people>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                Swimming
+                                <br>
+                                <div class="innerText">
+                                    <app-swimming-man></app-swimming-man>
+                                </div>
+                            </ng-template>
+
+                        </owl-carousel-o>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</body>

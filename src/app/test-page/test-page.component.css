@@ -1,0 +1,119 @@
+.page-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}
+
+.page-content-container {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.list-items {
+    padding-top: 20px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    color: rgba(140, 107, 216, 0.9);
+    padding: 10px 20px;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+}
+
+.list-item.selected {
+    background-color: rgb(53, 53, 87);
+    color: rgb(200, 122, 231);
+}
+
+.list-item:hover {
+    background-color: rgb(53, 53, 87);
+    color: rgb(200, 122, 231);
+}
+
+.list-item.selected::before {
+    opacity: 0.5;
+    transform: scaleY(1) scaleX(1);
+}
+
+.list-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: rgb(200, 122, 231);
+    /* set opacity to 0 by default */
+    opacity: 0;
+    transform: scaleY(0);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.list-item:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.list-item .material-icons {
+    display: flex;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    max-height: 250px;
+    padding: 10px 40px;
+    transition: 1s;
+}
+
+.profile-picture:hover {
+    /* -webkit-transform: rotate(360deg); */
+    border-radius: 50%;
+    max-height: 320px;
+    margin-left: -12%;
+    transition: 1s;
+}
+
+
+/* Buttons */
+
+.btn {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    width: 30rem;
+    text-align: center;
+    border: 0.5rem solid rgba(140, 107, 216, 0.9);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgba(140, 107, 216, 0.9);
+    background: rgb(35, 42, 58);
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(200, 86, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

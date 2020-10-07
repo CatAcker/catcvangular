@@ -1,0 +1,45 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding-top: 20px;
+    height: 200px;
+    width: 170px;
+}
+
+html {
+    padding-top: 0;
+}
+
+#Stick {
+    animation: stickmv 2s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes stickmv {
+    from {
+        transform: rotateZ(0deg) translateX(0) translateY(0);
+    }
+    to {
+        transform: rotateZ(-3deg) translateX(50px) translateY(10.5px);
+    }
+}
+
+#Ball {
+    animation: ballmv 2s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes ballmv {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50px);
+    }
+}

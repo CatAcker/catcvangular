@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="sidebar">
+            <img src="../../assets/me.jpg" class="profile-picture">
+            <div class="list-items">
+                <a routerLink="/me" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Hi There!
+                </a>
+                <a routerLink="/hobbies" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Hobbies & Sports
+                </a>
+                <a routerLink="/skills" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Skills
+                </a>
+                <a routerLink="/achievements" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Achievements ('13-'21)
+                </a>
+                <a routerLink="/references" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>References
+                </a>
+                <a routerLink="/education" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Education
+                </a>
+                <a routerLink="/contactInfo" routerLinkActive="selected" class="list-item">
+                    <i class="material-icons">
+                        bookmark
+                    </i>Contact Information
+                </a>
+            </div>
+
+        </div>
+
+        <div class="page-content-container">
+            <router-outlet></router-outlet>
+        </div>
+        <app-shared></app-shared>
+
+
+    </div>
+</body>
+
+</html>

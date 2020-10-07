@@ -1,0 +1,398 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.programming-skills-bar-container {
+    padding-top: 0%;
+    padding-bottom: 70px;
+    position: relative;
+    width: 40% !important;
+    min-width: 300px;
+    top: 40%;
+    left: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.language-skills-bar-container {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    position: relative;
+    width: 40% !important;
+    min-width: 300px;
+    top: -72.5%;
+    left: 80%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    list-style: none;
+}
+
+h3 {
+    font-size: 20px;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    text-decoration: underline;
+}
+
+li {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.bar-container {
+    background-color: rgb(90, 90, 90);
+    border-radius: 5%;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.progressbar-title {
+    font-family: 'Righteous', fantasy;
+    color: rgb(200, 122, 231);
+    text-shadow: rgb(255, 255, 255);
+    outline: rgb(53, 53, 87);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.percent {
+    position: absolute;
+    right: 100%;
+}
+
+#progress-html {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: 1s;
+    animation-delay: 0s;
+}
+
+#progress-css {
+    -webkit-animation-name: progress-css;
+    animation-name: progress-css;
+    -webkit-animation-delay: 1s*2;
+    animation-delay: 1s*2;
+}
+
+#progress-javascript {
+    -webkit-animation-name: progress-javascript;
+    animation-name: progress-javascript;
+    -webkit-animation-delay: 1s*3;
+    animation-delay: 1s*3;
+}
+
+#progress-php {
+    -webkit-animation-name: progress-php;
+    animation-name: progress-php;
+    -webkit-animation-delay: 1s*4;
+    animation-delay: 1s*4;
+}
+
+#progress-angular {
+    -webkit-animation-name: progress-angular;
+    animation-name: progress-angular;
+    -webkit-animation-delay: 1s*5;
+    animation-delay: 1s*5;
+}
+
+#progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: 1s*6;
+    animation-delay: 1s*6;
+}
+
+#progress-csharp {
+    -webkit-animation-name: progress-csharp;
+    animation-name: progress-csharp;
+    -webkit-animation-delay: 1s*6;
+    animation-delay: 1s*6;
+}
+
+#progress-delphi {
+    -webkit-animation-name: progress-delphi;
+    animation-name: progress-delphi;
+    -webkit-animation-delay: 1s*6;
+    animation-delay: 1s*6;
+}
+
+.progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.progresslightblue {
+    background-color: rgb(200, 122, 231);
+    ;
+}
+
+.progressblue {
+    background-color: rgb(156, 11, 149);
+}
+
+@-webkit-keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@-webkit-keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@-webkit-keyframes progress-angular {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-webkit-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes progress-csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes progress-delphi {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@-moz-keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@-moz-keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@-moz-keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@-moz-keyframes progress-angular {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes progress-csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes progress-delphi {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes progress-angular {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progress-csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progress-delphi {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+
+/* HEADING CONT. */
+
+.box {
+    display: inline-flex;
+    padding-bottom: 200px;
+}
+
+
+/* PAGECONTENT */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    background: rgb(35, 42, 58);
+}
