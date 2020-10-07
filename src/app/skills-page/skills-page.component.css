@@ -1,13 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-*,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 html,
 body {
     width: 100%;
@@ -20,7 +11,7 @@ body {
     position: relative;
     width: 40% !important;
     min-width: 300px;
-    top: 40%;
+    top: 90%;
     left: 20%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -33,7 +24,7 @@ body {
     position: relative;
     width: 40% !important;
     min-width: 300px;
-    top: -72.5%;
+    top: -130%;
     left: 80%;
     -webkit-transform: translate(-50%, 50%);
     transform: translate(-50%, 50%);
@@ -383,6 +374,7 @@ li {
 
 .box {
     display: inline-flex;
+    padding-top: 0;
     padding-bottom: 200px;
 }
 
@@ -395,4 +387,8 @@ li {
     height: 50vh;
     justify-content: center;
     background: rgb(35, 42, 58);
+}
+
+.page-content-container {
+    padding-top: 0%;
 }
